@@ -31,6 +31,7 @@ class PigLatinizer
 
     #if the text contains spaces, spit it into words
     #if text.include? " "
+      #split_sentence_into_words
     #pig latin each word
     if word_begins_with_vowel?(text)
       answer = text + "way"
