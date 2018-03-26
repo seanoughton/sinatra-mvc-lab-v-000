@@ -39,7 +39,7 @@ class PigLatinizer
         end
         answer
       end
-    if word_begins_with_vowel?(text)
+    elsif word_begins_with_vowel?(text)
       answer = text + "way"
     else
        answer = consonants(text) + "ay"
