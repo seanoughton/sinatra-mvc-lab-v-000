@@ -30,7 +30,9 @@ class PigLatinizer
 
   def piglatinize(text)
     if text.include? " "
-      #split_sentence_into_words
+      words_array = split_sentence_into_words(text)
+      words_array.each do |word|
+      end
     #pig latin each word
     if word_begins_with_vowel?(text)
       answer = text + "way"
