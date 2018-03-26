@@ -17,6 +17,7 @@ class PigLatinizer
 
   def piglatinize(text)
     base = consonants(text)
+    base + "ay"
 
   end
 
