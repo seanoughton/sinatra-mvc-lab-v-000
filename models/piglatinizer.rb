@@ -30,6 +30,7 @@ class PigLatinizer
   def piglatinize(text)
 
     #if the text contains spaces, spit it into words
+    #if text.include? " "
     #pig latin each word
     if word_begins_with_vowel?(text)
       answer = text + "way"
