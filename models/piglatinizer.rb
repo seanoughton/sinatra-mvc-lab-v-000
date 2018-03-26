@@ -30,7 +30,7 @@ class PigLatinizer
     if word_begins_with_vowel?(text)
       answer = text + "way"
     else
-      answer = text + "way"
+       answer = consonants(text) + "ay"
     end
     answer
 
