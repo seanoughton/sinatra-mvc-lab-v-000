@@ -16,6 +16,7 @@ class PigLatinizer
   end
 
   def piglatinize(text)
+    if text.length > 1
      consonants(text) + "ay"
 
 
