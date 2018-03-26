@@ -24,6 +24,9 @@ class PigLatinizer
       end
   end
 
+  def split_sentence_into_words
+  end
+
   def piglatinize(text)
     answer = ""
     if word_begins_with_vowel?(text)
