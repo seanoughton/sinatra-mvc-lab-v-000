@@ -15,8 +15,18 @@ class PigLatinizer
     text_array.join()
   end
 
+  def word_begins_with_vowel?(text)
+      text_array = text.split("")
+      if text_array[0].scan(/[aeiouAEIOU]/) != []
+        true
+      else
+        false
+      end
+  end
+
   def piglatinize(text)
     answer = ""
+    #For words that begin with vowel sounds
     if text.length > 1
        answer = consonants(text) + "ay"
     else
