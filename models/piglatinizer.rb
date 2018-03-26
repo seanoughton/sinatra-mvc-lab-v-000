@@ -20,7 +20,7 @@ class PigLatinizer
     if text.length > 1
        answer = consonants(text) + "ay"
     else
-
+      answer = text + "way"
     end
 
 
