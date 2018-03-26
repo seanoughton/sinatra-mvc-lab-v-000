@@ -30,6 +30,7 @@ class PigLatinizer
 
   def piglatinize(text)
     if text.include? " "
+      binding.pry
       words_array = split_sentence_into_words(text)
       words_array.each do |word|
         if word_begins_with_vowel?(text)
