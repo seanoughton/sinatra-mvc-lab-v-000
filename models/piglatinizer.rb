@@ -24,7 +24,7 @@ class PigLatinizer
       end
   end
 
-  def split_sentence_into_words
+  def split_sentence_into_words(text)
   end
 
   def piglatinize(text)
