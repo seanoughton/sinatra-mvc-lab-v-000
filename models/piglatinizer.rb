@@ -25,7 +25,7 @@ class PigLatinizer
   end
 
   def split_sentence_into_words(text)
-    #split into words
+    string.split(" ")
     #return an array of words
   end
 
