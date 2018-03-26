@@ -12,7 +12,6 @@ class PigLatinizer
     until text_array[0].scan(/[aeiou]/) != []
       x = text_array.shift
       text_array << x
-      binding.pry
     end
     text_array.join()
   end
