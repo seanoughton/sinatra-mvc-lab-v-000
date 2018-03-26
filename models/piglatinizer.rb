@@ -35,7 +35,6 @@ class PigLatinizer
        answer = consonants(text) + "ay"
     end
     answer
-
   end
 
 end
