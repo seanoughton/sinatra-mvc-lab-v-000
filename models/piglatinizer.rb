@@ -22,7 +22,7 @@ class PigLatinizer
     else
       answer = text + "way"
     end
-
+    answer
 
   end
 
