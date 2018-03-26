@@ -6,10 +6,9 @@ class PigLatinizer
     @text = text.downcase
   end
 
-  def consonants(text)
-    text = text.downcase
+  def consonants(text)=
     text_array = text.split("")
-    until text_array[0].scan(/[aeiou]/) != []
+    until text_array[0].scan(/[aeiouAEIOU]/) != []
       x = text_array.shift
       text_array << x
     end
