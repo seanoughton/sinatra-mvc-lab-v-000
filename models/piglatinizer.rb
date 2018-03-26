@@ -9,9 +9,9 @@ class PigLatinizer
   def consonants(text)
     text_array = text.split("")
     until text_array[0].scan(/[aeiou]/) != []
-      binding.pry
       x = text_array.shift
       text_array << x
+      binding.pry
     end
     text_array.join()
   end
