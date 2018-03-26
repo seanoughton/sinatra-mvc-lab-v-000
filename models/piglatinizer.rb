@@ -28,7 +28,6 @@ class PigLatinizer
   end
 
   def piglatinize(text)
-    answer = ""
     if word_begins_with_vowel?(text)
       answer = text + "way"
     else
