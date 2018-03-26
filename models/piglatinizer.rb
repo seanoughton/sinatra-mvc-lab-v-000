@@ -32,8 +32,13 @@ class PigLatinizer
     if text.include? " "
       words_array = split_sentence_into_words(text)
       words_array.each do |word|
+        if word_begins_with_vowel?(text)
+          answer = text + "way"
+        else
+           answer = consonants(text) + "ay"
+        end
+        answer
       end
-    #pig latin each word
     if word_begins_with_vowel?(text)
       answer = text + "way"
     else
